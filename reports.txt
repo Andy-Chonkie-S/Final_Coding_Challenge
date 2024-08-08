@@ -1,0 +1,31 @@
+
+RESULTS
+------------------------------------------------------------------
+| Algorithms        D01S      D02S      D03A      D04S      D05A |
+------------------------------------------------------------------
+| regression        62.5      70.8        XX      65.6      48.6 |
+| decisiontree        --        XX      62.1      70.5      45.7 |
+| randomforest      68.9      62.1        --        XX        -- |
+| svm               64.5        XX      59.4        --      50.2 |
+| mlp               70.2        --      68.3      73.9      59.7 |
+| cnn               80.1      76.1        --      81.4      63.5 |
+------------------------------------------------------------------
+
+RESULTS SUMMARY
+There are 6 algorithms and 5 datasets.
+The number of nonexistent results is 4 and on-going results is 6.
+
+DATASET INFORMATION
+-----------------------------------------------------------------------------------------------------------
+| DatasetID   Name            Type    Weight      Ndata      Source    Average            Range     Nfail |
+-----------------------------------------------------------------------------------------------------------
+| D01S        Iris               S         1        150         UCI       69.2      62.5 - 80.1         0 |
+| D02S        Wine               S         1        178         UCI       69.7      62.1 - 76.1         2 |
+| D03A        MNIST              A         2      70000    Personal       63.3      59.4 - 68.3         1 |
+| D04S        BreastCancer       S         1        569         UCI       72.8      65.6 - 81.4         1 |
+| D05A        CIFAR              A         4      60000    Personal       53.5      45.7 - 63.5         0 |
+-----------------------------------------------------------------------------------------------------------
+
+DATASET SUMMARY
+The most difficult dataset is CIFAR with an average result of 53.5.
+The dataset with the most failures is Wine with the number of failures being 2.
